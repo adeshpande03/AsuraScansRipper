@@ -73,8 +73,8 @@ def saveChapter(comic_folder_name, beg_chapter, end_chapter, comic_url_up_to_cha
 
 
 saveChapter(
-    "Return of the Mount Hua Sect",
-    sys.argv[1],
-    sys.argv[2],
-    "https://asuracomic.net/series/return-of-the-mount-hua-sect-e35abd30/chapter/",
+    "Return of the Mount Hua Sect", #folder title
+    sys.argv[1], #beg
+    sys.argv[2], #end
+    "https://asuracomic.net/series/return-of-the-mount-hua-sect-e35abd30/chapter/", #link up to /chapter/
 )
