@@ -65,11 +65,11 @@ def saveChapter(comic_folder_name, beg_chapter, end_chapter, comic_url_up_to_cha
             response = requests.get(img, stream=True)
             with open(full_path + "/" + img[-7:], "wb") as out_file:
                 shutil.copyfileobj(response.raw, out_file)
-        convert_and_concatenate_vertical(
-            f"{full_path}",
-            f"{full_path}/{chapter}.png",
-        )
-        print(f"Chapter {chapter} done.")
+        # convert_and_concatenate_vertical(
+        #     f"{full_path}",
+        #     f"{full_path}/{chapter}.png",
+        # )
+        # print(f"Chapter {chapter} done.")
 
 
 saveChapter(
